@@ -8,7 +8,7 @@ def getRepos(user):
 		req = requests.get(url = url) 
 		res = req.json()
 
-		#pprint.pprint(res)
+		print(res)
 		if(res):
 			#print repos very nicely
 			for repo in res:
@@ -37,3 +37,5 @@ def getCommits(user, repo):
 	else:
 		return "Not valid input"
 	
+
+#getRepos("mmckeon16")
